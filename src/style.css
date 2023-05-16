@@ -5,8 +5,12 @@ body {
 }
 
 main {
-  margin: 10% auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  padding: 40px;
+  width: 60%;
+  height: 100%;
 }
 
 h1,
@@ -25,7 +29,6 @@ h2 {
 }
 
 .main-container {
-  margin: 0 auto;
   max-width: 960px;
   padding: 1rem;
   display: flex;
@@ -120,4 +123,31 @@ label {
 .score-button {
   align-self: flex-end;
   margin-right: 1%;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    align-items: center;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .display-score,
+  .add-score {
+    width: 100%;
+  }
 }

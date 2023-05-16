@@ -17,7 +17,7 @@ h2 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -46,9 +46,9 @@ h2 {
   padding: 1rem 0;
 }
 
-.refresh-button {
-  width: 4rem;
-}
+/* .refresh-button {
+   width: 4rem; 
+} */
 
 table {
   border: 2px solid black;
@@ -77,6 +77,10 @@ td:first-child {
   text-align: center;
 }
 
+form {
+  width: 80%;
+}
+
 .score-form {
   width: 100%;
   display: flex;
@@ -85,12 +89,29 @@ td:first-child {
   align-items: center;
 }
 
-.input-container input {
+.input-container {
+  width: 100%;
+}
+
+input {
   width: 95%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 label {
   display: none;
+}
+
+.refresh-button,
+.score-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .score-button {

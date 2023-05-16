@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Leaderboard</title>
+	</head>
+	<body>
+		<main>
+			<h1>Leaderboard</h1>
+			<section class="main-container">
+				<div class="display-score">
+					<div class="refresh">
+						<h2>Recent scores</h2>
+						<button class="refresh-button" type="button">Refresh</button>
+					</div>
+					<table>
+						<tbody>
+							<tr>
+								<td>John :</td>
+								<td>42</td>
+							</tr>
+							<tr>
+								<td>Jane :</td>
+								<td>35</td>
+							</tr>
+							<tr>
+								<td>Bob :</td>
+								<td>27</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="add-score">
+					<h2>Add your score</h2>
+					<form>
+						<div class="score-form">
+							<div class="input-container">
+								<label for="name">Name:</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									required
+									placeholder="Your name" />
+							</div>
+							<div class="input-container">
+								<label for="score">Score:</label>
+								<input
+									type="text"
+									id="score"
+									name="score"
+									required
+									placeholder="Your score" />
+							</div>
+							<button type="submit" class="score-button">Submit</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

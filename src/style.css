@@ -39,16 +39,11 @@ h2 {
   width: 50%;
 }
 
-
 .refresh {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
 }
-
-/* .refresh-button {
-   width: 4rem; 
-} */
 
 table {
   border: 2px solid black;
@@ -61,6 +56,14 @@ tr:nth-child(even) {
 
 td:first-child {
   width: 4rem;
+}
+
+.player-name {
+  width: 20%;
+}
+
+.player-score {
+  width: 80%;
 }
 
 .add-score {

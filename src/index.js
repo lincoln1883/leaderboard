@@ -37,3 +37,39 @@ const addScore = async (user, score) => {
 		return error.message;
 	}
 };
+
+const renderScores = (scoreItem) => {
+	const scoresTable = document.querySelector('table');
+	const tableBody = document.querySelector('tbody');
+
+	tableBody.innerHTML = '';
+	scoreItem.forEach((score) => {
+		const tableRow = document.createElement('tr');
+
+		const nameItem = document.createElement('td');
+		nameItem.classList.add('player-name');
+		nameItem.innerText = `${score.user}`;
+		tableRow.appendChild(nameItem);
+
+		const scoreItem = document.createElement('td');
+		scoreItem.classList.add('player-score');
+		scoreItem.innerText = `${score.score}`;
+		tableRow.appendChild(scoreItem);
+
+		tableBody.appendChild(tableRow);
+		scoresTable.appendChild(tableBody);
+	});
+};
+
+const handleSubmit = async (e) => {
+	e.preventDefault();
+	const user = nameInput.value;
+	const score = scoreInput.value;
+	const results = await addScore(user, score);
+	if (results && results.result === 'Leaderboard score created correctly.') {
+		const scoreItem = await getScore();
+		renderScores(scoreItem);
+	}
+	scoreInput.value = '';
+	nameInput.value = '';
+};

@@ -151,6 +151,7 @@ label {
 button:hover {
   background-color: #e6e6e6;
   transform: scaleX(1.1);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {

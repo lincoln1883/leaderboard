@@ -13,23 +13,12 @@
 				<div class="display-score">
 					<div class="refresh">
 						<h2>Recent scores</h2>
-						<button class="refresh-button" type="button">Refresh</button>
+						<button class="refresh-button" id="refresh-btn" type="button">
+							Refresh
+						</button>
 					</div>
-					<table>
-						<tbody>
-							<tr>
-								<td>John :</td>
-								<td>42</td>
-							</tr>
-							<tr>
-								<td>Jane :</td>
-								<td>35</td>
-							</tr>
-							<tr>
-								<td>Bob :</td>
-								<td>27</td>
-							</tr>
-						</tbody>
+					<table id="score-table">
+						<tbody></tbody>
 					</table>
 				</div>
 
@@ -41,7 +30,7 @@
 								<label for="name">Name:</label>
 								<input
 									type="text"
-									id="name"
+									id="name-input"
 									name="name"
 									required
 									placeholder="Your name" />
@@ -49,13 +38,15 @@
 							<div class="input-container">
 								<label for="score">Score:</label>
 								<input
-									type="text"
-									id="score"
+									type="number"
+									id="score-input"
 									name="score"
 									required
 									placeholder="Your score" />
 							</div>
-							<button type="submit" class="score-button">Submit</button>
+							<button type="submit" id="submit-btn" class="score-button">
+								Submit
+							</button>
 						</div>
 					</form>
 				</div>

@@ -57,6 +57,10 @@ tr:nth-child(even) {
   background-color: rgb(199, 195, 195);
 }
 
+td {
+  padding: 0.5rem;
+}
+
 td:first-child {
   width: 4rem;
 }
@@ -72,7 +76,6 @@ td:first-child {
 .add-score {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
   width: 50%;

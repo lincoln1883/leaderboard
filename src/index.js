@@ -73,3 +73,15 @@ const handleSubmit = async (e) => {
 	scoreInput.value = '';
 	nameInput.value = '';
 };
+
+const handleRefresh = async () => {
+	const tableBody = document.querySelector('tbody');
+	tableBody.innerHTML = '';
+	const scores = await getScore();
+	renderScores(scores);
+};
+
+form.addEventListener('submit', handleSubmit);
+refreshBtn.addEventListener('click', handleRefresh);
+
+window.addEventListener('DOMContentLoaded', handleRefresh);

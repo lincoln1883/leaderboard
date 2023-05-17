@@ -8,7 +8,7 @@ const renderScores = (scoreItem) => {
 
     const nameItem = document.createElement('td');
     nameItem.classList.add('player-name');
-    nameItem.innerText = `${score.user}`;
+    nameItem.innerText = `${score.user}:`;
     tableRow.appendChild(nameItem);
 
     const scoreItem = document.createElement('td');

@@ -48,8 +48,15 @@ h2 {
   padding: 1rem 0;
 }
 
-table {
+.table-container {
   border: 2px solid black;
+  overflow-y: scroll;
+  scrollbar-gutter: auto;
+  height: 400px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+table {
   border-collapse: collapse;
 }
 
@@ -59,6 +66,8 @@ tr:nth-child(even) {
 
 td {
   padding: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 td:first-child {
@@ -105,7 +114,7 @@ form {
 input {
   width: 95%;
   padding: 0.5rem;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 5px;
 }
 
@@ -125,7 +134,24 @@ label {
 
 .score-button {
   align-self: flex-end;
-  margin-right: 1%;
+}
+
+.success {
+  color: #208119;
+  font-size: large;
+  font-weight: bold;
+}
+
+.error {
+  color: #a22e2e;
+  font-size: large;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  transform: scaleX(1.1);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {

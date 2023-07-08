@@ -1,4 +1,5 @@
 const renderScores = (scoreItem) => {
+  scoreItem.sort((a, b) => b.score - a.score);
   const scoresTable = document.querySelector('table');
   const tableBody = document.querySelector('tbody');
 

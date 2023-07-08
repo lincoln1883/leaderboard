@@ -79,8 +79,7 @@ The Leaderboard is a project assignment of module two where we are required to u
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> coming soon
+[View Live](https://lincoln1883.github.io/leaderboard/)
 
 <!-- GETTING STARTED -->
 
